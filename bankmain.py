@@ -2,7 +2,7 @@
 import os
 import csv
 #path to our csv file
-bank_path = os.path.join('PyBank_Resources.csv')
+bank_path = os.path.join('Resources', 'PyBank_Resources.csv')
 #most if not all of my variables and lsits
 profit_loss_total = 0
 profit_loss_average = 0
@@ -67,7 +67,7 @@ firstminuslast = int(first_month) - int(last_month)
 print("first month minus last month:",firstminuslast)
 
 #finally we rewrite all the statements in another csv file we labeled "PyBank_Write_File.csv" - it's a blank file that our code will write in. We use csvwriter.writerow and rewrite all of our print statements
-write_bank_path = os.path.join("PyBank_Write_File.csv")
+write_bank_path = os.path.join('Analysis', 'PyBank_Write_File.csv')
 with open(write_bank_path, 'w') as csvfile:
 	csvwriter = csv.writer(csvfile, delimiter=',')
 	csvwriter.writerow(['Summary Stats Name','Summary Stats Value'])
