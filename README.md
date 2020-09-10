@@ -1,3 +1,3 @@
 # python-homework
 
-I made the pathing to the read and write files accessible by desktop. This saved me time when editing.
+I had computer difficulties with the file path. The teacher and TAs were notified. 
