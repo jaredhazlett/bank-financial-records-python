@@ -4,7 +4,7 @@ import csv
 
 
 #now we need a file path to the data.
-poll_path = os.path.join('Resources', 'PyPoll_Data.csv')
+poll_path = os.path.join('PyPoll_Data.csv')
 with open(poll_path, 'r') as poll_file:
 	poll_data = csv.reader(poll_file, delimiter=',')
 #skip the header using next() function.
@@ -66,7 +66,7 @@ if winner == otooley_percent:
     print("winner: O'Tooley")
 
 #we below use csvwriter.writerow to write into our blank file PyPoll_Write_File.csv.
-write_poll_path = os.path.join('Analysis', 'PyPoll_Write_File.csv')
+write_poll_path = os.path.join('PyPoll_Write_File.csv')
 with open(write_poll_path, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
     csvwriter.writerow(['Title','Summary Stats','','Percentages'])
