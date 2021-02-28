@@ -1,3 +1,4 @@
 # python-homework
 
-I had computer difficulties with the file path. The teacher and TAs were notified. 
+This basic project uses python to print bank records to an excel file. 
+
